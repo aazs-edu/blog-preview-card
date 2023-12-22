@@ -1,0 +1,68 @@
+/* Start Variables */
+:root {
+    /* Fonts */
+    --f-font: 'Figtree', sans-serif;
+    /* Primary Colors  */
+    --c1-color: hsl(47, 88%, 63%);
+    /* Neutral Colors  */
+    --c2-color: hsl(0, 0%, 50%);
+    --c3-color: hsl(0, 0%, 7%);
+}
+/* End Variables */
+
+/* Start Global Rules */
+*{margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{background-color: var(--c1-color);}
+body{
+    font-family: var(--f-font);  font-weight: 600;
+    min-height: 100vh; display: flex; justify-content: center; align-items: center;
+}
+img{max-width: 100%; display: block;}
+/* End Global Rules */
+
+main{background-color: white;  border-radius: 20px;  
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,1),
+    8px 8px 0px 0px rgba(0,0,0,1);
+    transition: all 0.5s;
+}
+main:hover{
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,1),
+    13px 13px 0px 0px rgba(0,0,0,1);
+}
+main .container{
+    width: 380px;   margin: 0 auto;     padding: 25px;
+    display: flex;      flex-direction: column; 
+}
+main .container .img-box{
+    margin-bottom: 25px;
+}
+main .container .img-box img{border-radius: 10px;}
+main .container .info-box .category{
+    display: block;  font-weight: 800;  padding: 6px 12px;  background-color: var(--c1-color);  width: fit-content;
+    border-radius: 5px;  margin-bottom: 12.5px;
+}
+main .container .info-box .date{
+    color: var(--c3-color);  font-size: 15px;  margin-bottom: 20px;  display: block;
+}
+main .container .info-box h2{
+    font-weight: 800;  color: var(--c3-color);  margin-bottom: 20px;  cursor: pointer;
+    transition: all 0.5s;
+}
+main .container .info-box h2:hover{color: var(--c1-color);}
+main .container .info-box p{
+    color: var(--c2-color);  margin-bottom: 25px;
+}
+main .container .info-box .author{
+    display: flex;  align-items: center;  font-weight: 800;
+}
+main .container .info-box .author img{width: 35px;  margin-right: 10px;}
+
+/* Media Rules */
+@media screen and (max-width: 380px) {
+    main .container{
+        width: 325px;
+    }
+    main .container .info-box h2{font-size: 20px;}
+    main .container .info-box p{font-size: 13.5px;}
+    main .container .info-box .author{font-size: 14.5px;}
+}
