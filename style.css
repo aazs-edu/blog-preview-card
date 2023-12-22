@@ -30,7 +30,7 @@ main:hover{
     13px 13px 0px 0px rgba(0,0,0,1);
 }
 main .container{
-    width: 380px;   margin: 0 auto;     padding: 25px;
+    width: 380px;   margin: 0 auto;     padding: 1.4rem;
     display: flex;      flex-direction: column; 
 }
 main .container .img-box{
@@ -50,7 +50,8 @@ main .container .info-box h2{
 }
 main .container .info-box h2:hover{color: var(--c1-color);}
 main .container .info-box p{
-    color: var(--c2-color);  margin-bottom: 25px;  line-height: 25px;
+    color: var(--c2-color);  margin-bottom: 25px; font-weight: 300; 
+    letter-spacing: .01rem;  line-height: 1.5rem;
 }
 main .container .info-box .author{
     display: flex;  align-items: center;  font-weight: 800;  font-size: 14.5px;
